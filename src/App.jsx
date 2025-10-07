@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Categorias from './pages/Categorias';
+import Servicos from './pages/Servicos';
 import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 
@@ -15,8 +15,8 @@ export default function App() {
       <main className="container mx-auto p-4 md:p-8 flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/categorias" element={<Categorias />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/servicos" element={<Servicos />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
       </main>
