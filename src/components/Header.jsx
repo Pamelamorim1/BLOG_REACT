@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 const LOGO_PATH = './images/ana-carla-gomes-logo.png';
 
 const Logo = () => (
-    <Link to="/" className="flex items-center space-x-2"> {/* Use flex para alinhar o logo e texto se quiser */}
+    <Link to="/BLOG_REACT" className="flex items-center space-x-2"> {/* Use flex para alinhar o logo e texto se quiser */}
         <img
             src={LOGO_PATH}
             alt="Ana Carla Gomes Estética Avançada"
