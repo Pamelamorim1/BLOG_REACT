@@ -1,4 +1,4 @@
-const profileImagePath = '/images/ana-carla-gomes-logo.png';
+const profileImagePath = './images/ana-carla-gomes-logo.png';
 
 export default function Sobre() {
     return (

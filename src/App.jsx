@@ -14,10 +14,10 @@ export default function App() {
 
       <main className="container mx-auto p-4 md:p-8 flex-grow">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sobre" element={<Sobre />} />
-          <Route path="/servicos" element={<Servicos />} />
-          <Route path="/contato" element={<Contato />} />
+          <Route path="/BLOG_REACT" element={<Home />} />
+          <Route path="/BLOG_REACT/sobre" element={<Sobre />} />
+          <Route path="/BLOG_REACT/servicos" element={<Servicos />} />
+          <Route path="/BLOG_REACT/contato" element={<Contato />} />
         </Routes>
       </main>
 
