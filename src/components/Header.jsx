@@ -61,7 +61,7 @@ export default function Header() {
                 </nav>
 
                 {/* Botão CTA na Direita */}
-                <div>
+                <div className='flex-shrink-0'>
                     <a
                         href={WHATSAPP_LINK}
                         target="_blank" // Abre o WhatsApp em uma nova aba
