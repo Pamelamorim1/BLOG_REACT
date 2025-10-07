@@ -1,7 +1,7 @@
 // src/components/Header.jsx
 import { Link, NavLink } from 'react-router-dom';
 
-const LOGO_PATH = '/images/ana-carla-gomes-logo.png';
+const LOGO_PATH = './images/ana-carla-gomes-logo.png';
 
 const Logo = () => (
     <Link to="/" className="flex items-center space-x-2"> {/* Use flex para alinhar o logo e texto se quiser */}
@@ -25,10 +25,10 @@ export default function Header() {
 
     // Atualizamos os links para corresponder à nova imagem
     const navLinks = [
-        { title: 'Home', path: '/' },
-        { title: 'Sobre', path: '/sobre' },
-        { title: 'Serviços', path: '/servicos' },
-        { title: 'Contato', path: '/contato' },
+        { title: 'Home', path: '/BLOG_REACT' },
+        { title: 'Sobre', path: '/BLOG_REACT/sobre' },
+        { title: 'Serviços', path: '/BLOG_REACT/servicos' },
+        { title: 'Contato', path: '/BLOG_REACT/contato' },
     ];
 
     return (
@@ -50,8 +50,7 @@ export default function Header() {
                                     to={link.path}
                                     // Estiliza o link ativo com uma borda inferior
                                     className={({ isActive }) =>
-                                        `text-slate-100 hover:text-primary-gold transition-colors pb-1
-                     ${isActive ? 'border-b-2 border-primary-gold' : 'border-b-2 border-transparent'}`
+                                        `text-slate-100 hover:text-primary-gold transition-colors pb-1 ${isActive ? 'border-b-2 border-primary-gold' : 'border-b-2 border-transparent'}`
                                     }
                                 >
                                     {link.title}
