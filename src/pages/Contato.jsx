@@ -15,7 +15,7 @@ export default function Contato() {
                 <div className="space-y-4">
                     <div>
                         <h2 className="text-xl font-semibold text-slate-700">Endereço</h2>
-                        <p className="text-slate-600">Rua Catiguá, 159 - Tatuapé, São Paulo - SP, 03065-030</p>
+                        <p className="text-slate-600">Rua Catiguá, 159 - Tatuapé, São Paulo - SP, Cep: 03065-030</p>
                     </div>
                     <div>
                         <h2 className="text-xl font-semibold text-slate-700">Telefone</h2>
@@ -30,8 +30,9 @@ export default function Contato() {
                         <p className="text-slate-600">@dra.anacarlg</p>
                     </div>
                     <div>
-                        <h2 className="text-xl font-semibold text-slate-700">Horário de Funcionamento</h2>
-                        <p className="text-slate-600">Segunda a Sexta: 9:00 - 18:00</p>
+                        <h2 className="text-xl font-semibold text-slate-700">Horário de Funcionamento (Atendimento com horário agendado)</h2>
+                        <p className="text-slate-600">Segunda a Sexta: 19:30 às 21:00</p>
+                        <p className="text-slate-600">Sábado e Domingo: 9:00 às 19:00</p>
                     </div>
                 </div>
 

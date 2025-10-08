@@ -59,7 +59,7 @@ export default function Header() {
                 </nav>
 
                 {/* Botão CTA na Direita (Agora também some no mobile) */}
-                <div className="hidden md:block flex-shrink-0"> {/* 2. ESCONDEMOS O BOTÃO NO MOBILE */}
+                <div className="hidden md:flex flex-shrink-2"> {/* 2. ESCONDEMOS O BOTÃO NO MOBILE */}
                     <a
                         href={WHATSAPP_LINK}
                         target="_blank"
@@ -87,7 +87,7 @@ export default function Header() {
                             <NavLink
                                 to={link.path}
                                 onClick={() => setIsMenuOpen(false)} // Fecha o menu ao clicar
-                                className={({ isActive }) => `text-xl ${isActive ? 'text-primary-gold' : 'text-slate-100'}`}
+                                className={({ isActive }) => `text-xl ${isActive ? 'text-primary-gold p' : 'text-slate-100'}`}
                             >
                                 {link.title}
                             </NavLink>
