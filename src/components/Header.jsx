@@ -31,18 +31,18 @@ export default function Header() {
     return (
         // Adicionamos 'relative' para o menu mobile se posicionar corretamente
         <header className="bg-primary-dark shadow-lg sticky top-0 z-50 relative">
-            
+
             {/* --- SUA ESTRUTURA ORIGINAL PARA A BARRA DO HEADER --- */}
             <div className="container mx-auto px-4 flex items-center justify-between py-2">
-                
+
                 {/* Logo na Esquerda (Sem alterações) */}
                 <div className="flex-shrink-0">
                     <Logo />
                 </div>
 
                 {/* Navegação no Centro (Exatamente como antes, apenas para desktop) */}
-                <nav className="hidden md:flex">
-                    <ul className="flex items-center gap-10">
+                <nav className="hidden md:flex p-4">
+                    <ul className="flex items-center gap-8">
                         {navLinks.map((link) => (
                             <li key={link.title}>
                                 <NavLink
