@@ -17,8 +17,28 @@ const servicesData = [
     },
     {
         icon: <FacialIcon />,
-        title: "Aplicação de Botox",
+        title: "Limpeza de Pele",
+        description: "Renove sua pele, removendo impurezas e cravos de forma profunda.",
+    },
+    {
+        icon: <FacialIcon />,
+        title: "Microagulhamento com Ativos",
         description: "Reduza rugas e linhas de expressão, rejuvenescendo sua aparência.",
+    },
+
+    {
+        icon: <FacialIcon />,
+        title: "Peeling",
+        description: "Tratamento para manchas, acne e envelhecimento cutâneo.",
+    },
+];
+
+
+const serviceInjetaveis = [
+    {
+        icon: <FacialIcon />,
+        title: "Toxina Botulínica (Botox)",
+        description: "Descrever",
     },
     {
         icon: <FacialIcon />,
@@ -27,13 +47,41 @@ const servicesData = [
     },
     {
         icon: <FacialIcon />,
-        title: "Limpeza de Pele",
-        description: "Renove sua pele, removendo impurezas e cravos de forma profunda.",
+        title: "Bioestimulador de Colágeno",
+        description: "Descrever",
     },
     {
         icon: <FacialIcon />,
-        title: "Peeling Químico",
-        description: "Tratamento para manchas, acne e envelhecimento cutâneo.",
+        title: "PEIM (Tratamento de Vasos)",
+        description: "Descrever",
+    },
+    {
+        icon: <FacialIcon />,
+        title: "Enzimas Redutoras de Medidas",
+        description: "Descrever",
+    },
+];
+
+const serviceIntimus = [
+    {
+        icon: <FacialIcon />,
+        title: "Harmonização de Glúteo",
+        description: "Descrever",
+    },
+    {
+        icon: <FacialIcon />,
+        title: "Harmonização Íntima",
+        description: "Descrever",
+    },
+    {
+        icon: <FacialIcon />,
+        title: "Drenagem Linfática",
+        description: "Descrever",
+    },
+    {
+        icon: <FacialIcon />,
+        title: "Massagem Modeladora",
+        description: "Descrever",
     },
 ];
 
@@ -47,8 +95,39 @@ export default function Servicos() {
             </div>
 
             {/* --- Container do Carrossel --- */}
+            <h4 className="text-2xl font-bold text-slate-700">Procedimentos Faciais</h4>
             <div className="flex overflow-x-auto space-x-8 py-4 snap-x snap-mandatory">
                 {servicesData.map((service, index) => (
+                    // --- Wrapper de cada Slide ---
+                    <div key={index} className="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4">
+                        <ServiceCard
+                            icon={service.icon}
+                            title={service.title}
+                            description={service.description}
+                        />
+                    </div>
+                ))}
+            </div>
+            <br />
+            <br />
+            <h4 className="text-2xl font-bold text-slate-700">Injetáveis e Preenchedores</h4>
+            <div className="flex overflow-x-auto space-x-8 py-4 snap-x snap-mandatory">
+                {serviceInjetaveis.map((service, index) => (
+                    // --- Wrapper de cada Slide ---
+                    <div key={index} className="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4">
+                        <ServiceCard
+                            icon={service.icon}
+                            title={service.title}
+                            description={service.description}
+                        />
+                    </div>
+                ))}
+            </div>
+            <br />
+            <br />
+            <h4 className="text-2xl font-bold text-slate-700">Procedimentos Corporais e Íntimos</h4>
+            <div className="flex overflow-x-auto space-x-8 py-4 snap-x snap-mandatory">
+                {serviceIntimus.map((service, index) => (
                     // --- Wrapper de cada Slide ---
                     <div key={index} className="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4">
                         <ServiceCard

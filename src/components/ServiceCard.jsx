@@ -2,7 +2,7 @@
 
 // O ícone pode ser um componente SVG ou uma imagem.
 // Para este exemplo, passaremos o ícone como um componente React (JSX).
-export default function ServiceCard({ icon, title, description }) {
+export default function ServiceCard({ icon, title, description, link }) {
     return (
         // O card em si. Note que ele não tem largura definida aqui,
         // a largura será controlada pelo container do carrossel.
@@ -22,7 +22,7 @@ export default function ServiceCard({ icon, title, description }) {
 
             {/* Botão */}
             <a
-                href="#"
+                href={link}
                 className="mt-auto bg-primary-orange text-white font-semibold px-8 py-2 rounded-md hover:opacity-90 transition-opacity"
             >
                 Saiba mais
